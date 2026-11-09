@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Suscríbete a KodiCode</title>
+
+  <!-- FUENTE POPPINS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main class="subscription-container">
+
+    <!-- LOGO -->
+    <img
+      src="https://github.com/duvan-carvajal/ProjectoFinal/blob/main/assets/images/kodicode-logo.png?raw=true"
+      alt="Logo KodiCode"
+      class="logo"
+    >
+
+    <!-- ENCABEZADO -->
+    <span class="welcome-label">
+      ¡ÚNETE A LA COMUNIDAD!
+    </span>
+
+    <h1>¡Suscríbete a KodiCode!</h1>
+
+    <p class="description">
+      Aprende a ver otra forma de programar, la programación es imaginación, 
+      si lo imaginas es posible.
+    </p>
+
+    <!-- FORMULARIO -->
+    <form id="subscription-form">
+
+      <label for="email">Correo electrónico</label>
+
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="ejemplo@correo.com"
+        autocomplete="email"
+        required
+      >
+
+      <button type="submit" id="submit-button">
+        ¡UNIRSE A KODICODE!
+      </button>
+
+      <!-- MENSAJE DE RESPUESTA -->
+      <p id="form-message" role="status" aria-live="polite"></p>
+
+    </form>
+
+    <!-- AVISO -->
+    <p class="privacy">
+      Al enviar tu correo, recibiras un correo donde te llevara al repositorio para instalar la app
+    </p>
+
+  </main>
+
+  <!-- BIBLIOTECA EMAILJS -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <!-- JAVASCRIPT -->
+  <script src="script.js"></script>
+
+</body>
+</html>
