@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -18,14 +17,32 @@
 
 <body>
 
+  <!-- FIGURAS DECORATIVAS -->
+  <div class="shapes" aria-hidden="true">
+    <span class="shape square"></span>
+    <span class="shape circle"></span>
+    <span class="shape plus">+</span>
+    <span class="shape tag">&lt;/&gt;</span>
+    <span class="shape star">★</span>
+    <span class="shape braces">{ }</span>
+  </div>
+
   <main class="subscription-container">
 
+    <!-- BARRA DE VENTANA -->
+    <div class="window-bar" aria-hidden="true">
+      <i></i><i></i><i></i>
+      <span>kodicode.app</span>
+    </div>
+
     <!-- LOGO -->
-    <img
-      src="https://github.com/duvan-carvajal/ProjectoFinal/blob/main/assets/images/kodicode-logo.png?raw=true"
-      alt="Logo KodiCode"
-      class="logo"
-    >
+    <div class="logo-wrap">
+      <img
+        src="https://github.com/duvan-carvajal/ProjectoFinal/blob/main/assets/images/kodicode-logo.png?raw=true"
+        alt="Logo KodiCode"
+        class="logo"
+      >
+    </div>
 
     <!-- ENCABEZADO -->
     <span class="welcome-label">
@@ -35,9 +52,16 @@
     <h1>¡Suscríbete a KodiCode!</h1>
 
     <p class="description">
-      Aprende a ver otra forma de programar, la programación es imaginación, 
+      Aprende a ver otra forma de programar, la programación es imaginación,
       si lo imaginas es posible.
     </p>
+
+    <!-- BARRA DE XP -->
+    <div class="xp" aria-hidden="true">
+      <span class="xp-label" id="xp-label">NIVEL 1</span>
+      <div class="xp-track"><div class="xp-fill" id="xp-fill"></div></div>
+      <span class="xp-value" id="xp-value">0%</span>
+    </div>
 
     <!-- FORMULARIO -->
     <form id="subscription-form">
@@ -64,7 +88,7 @@
 
     <!-- AVISO -->
     <p class="privacy">
-      Al enviar tu correo, recibiras un correo donde te llevara al repositorio para instalar la app
+      Al enviar tu correo, recibirás un correo que te llevará al repositorio para instalar la app.
     </p>
 
   </main>
